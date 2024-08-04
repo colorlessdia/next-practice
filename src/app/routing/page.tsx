@@ -1,4 +1,11 @@
+import { Metadata } from "next";
 import Link from "next/link";
+
+// 현재 페이지의 metadata 를 생성
+export const metadata: Metadata = {
+  title: 'Routing', // title은 현재 값으로 덮어 씌워짐
+  // 작성되지 않은 description의 경우 상위 세그먼트 값을 읽어옴
+};
 
 const Routing = () => {
   const randomNumber = Math.ceil(Math.random() * 10);

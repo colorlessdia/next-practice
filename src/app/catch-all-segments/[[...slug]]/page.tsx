@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata  = {
+  title: {
+    absolute: 'catch-all-segment metadata'
+  }
+};
+
 type CatchAllSegmentsProps = {
   params: {
     slug: string[];

@@ -1,3 +1,17 @@
+import { Metadata } from "next";
+
+// 동적 metadata
+export const generateMetadata = ({params}: {
+  params: {
+    'dynamic-page-id': string;
+  };
+}): Metadata => {
+  return {
+    title: `Dynamic ${params['dynamic-page-id']} metadata`,
+    description: `page${params['dynamic-page-id']}`,
+  };
+};
+
 type DynamicRoutesProps = {
   params: {
     'dynamic-page-id': string;
