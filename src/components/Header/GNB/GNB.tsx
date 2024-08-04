@@ -3,6 +3,7 @@ import LinkItem from "./LinkItem/LinkItem";
 const GNB = () => {
   const linkList = [
     { href: '/routing', title: 'Routing' },
+    { href: '/catch-all-segments', title: 'Catch-All-Segments' },
   ];
 
   return (
