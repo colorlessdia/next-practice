@@ -12,12 +12,19 @@ const Routing = () => {
       </ol>
       <h3>중첩 라우팅</h3>
       <Link href='/routing/nested-routes'>중첩 라우팅</Link>
+
       <h3>동적 라우팅 - 현재 난수: {randomNumber}</h3>
       <Link href={`/routing/${randomNumber}`}>동적 라우팅 {randomNumber}페이지</Link>
+
       <h3>프라이빗 폴더</h3>
       <Link href='/routing/private-folders'>프라이빗</Link>
+
       <h3>파일 공동 배치</h3>
       <Link href={'/routing/colocation'}>파일 공동 배치</Link>
+      
+      <h3>그룹화</h3>
+      <Link href='/routing/item-first'>item first</Link>
+      <Link href='/routing/item-second'>item second</Link>
     </>
   );
 };
