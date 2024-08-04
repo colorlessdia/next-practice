@@ -16,6 +16,8 @@ const Routing = () => {
       <Link href={`/routing/${randomNumber}`}>동적 라우팅 {randomNumber}페이지</Link>
       <h3>프라이빗 폴더</h3>
       <Link href='/routing/private-folders'>프라이빗</Link>
+      <h3>파일 공동 배치</h3>
+      <Link href={'/routing/colocation'}>파일 공동 배치</Link>
     </>
   );
 };
