@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
 export const metadata: Metadata  = {
   title: {
@@ -19,7 +20,9 @@ const CatchAllSegments = ({ params }: CatchAllSegmentsProps) => {
     return '/catch-all-segments/' + slugList.join('/');
   };
 
-  if (slug?.length === 3) {
+  if (3 < slug?.length) {
+    notFound();
+  } else if (slug?.length === 3) {
     return (
       <>
         <h2>{slug[slug.length - 1]} 페이지</h2>
