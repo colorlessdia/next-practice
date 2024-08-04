@@ -10,7 +10,7 @@ type LinkItemProps = {
 
 const LinkItem = ({ link }: LinkItemProps) => {
   const pathname = usePathname();
-  const isActive = pathname === link.href ? true : false;
+  const isActive = pathname.includes(link.href) ? true : false;
 
   return (
     <li
